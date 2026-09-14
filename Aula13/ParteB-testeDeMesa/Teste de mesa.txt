@@ -1,0 +1,17 @@
+Cenário 1:
+//Passo                                       |  distancia     |  consumo       |  preço    | litros    |  custo      | Saída  
+//leia(distancia)                             | [100]          |  [?]           |  [?]      |  [?]      |  [?]        |  [?]  e  [?]
+//leia(consumo)                               | [100]          |  [10]          |  [?]      |  [?]      |  [?]        |  [?]  e  [?]
+//leia(preço)                                 | [100]          |  [10]          |  [5]      |  [?]      |  [?]        |  [?]  e  [?]
+//litros = distancia/consumo                  | [100]          |  [10]          |  [5]      |  [10]     |  [?]        |  [?]  e  [?]
+//custo = litro * preço                       | [100]          |  [10]          |  [5]      |  [10]     |  [50]       |  [?]  e  [?]
+//Escreva = litros e custo                    | [100]          |  [10]          |  [5]      |  [10]     |  [50]       |  {10} e  {50}
+
+
+Cenário 2:
+//Passo                                       |  distancia     |  consumo       |  preço    | litros     |  custo      | Saída  
+//leia(distancia)                             | [0]            |  [?]           |  [?]      |  [?]       |  [?]        |  [?]  e  [?]
+//leia(consumo)                               | [0]            |  [10]          |  [?]      |  [?]       |  [?]        |  [?]  e  [?]
+//leia(preço)                                 | [0]            |  [10]          |  [5]      |  [?]       |  [?]        |  [?]  e  [?]
+//se distancia == 0 ou consumo == 0           | [0]            |  [10]          |  [5]      |  [?]       |  [?]        |  [?]  e  [?]
+//Escreva = Erro: o valor não pode ser vazio. | [0]            |  [10]          |  [5]      |  [?]       |  [?]        |  {Erro: o valor não pode ser vazio.}
