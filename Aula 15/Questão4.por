@@ -1,38 +1,53 @@
 programa {
   funcao inicio() {
-    //Passo                     | nota       | Saída  
-    //leia(nota)                | [10.0]     |  {Conceito: Excelente}
+    real a, b, resultado
+        inteiro opcao
 
-    //Passo                     | nota       | Saída  
-    //leia(nota)                | [8.5]      |  {Conceito: Bom}
-   
-    //Passo                     | nota       | Saída  
-    //leia(nota)                | [6.0]      |  {Conceito: Regular}
+        escreva("Digite o valor de A: ")
+        leia(a)
 
-    //Passo                     | nota       | Saída  
-    //leia(nota)                | [5.9]      |  {Conceito: Insuficiente}
+        escreva("Digite o valor de B: ")
+        leia(b)
 
-    //Passo                     | nota       | Saída  
-    //leia(nota)                | [0.0]      |  {Conceito: Insuficiente}
+        escreva("\n")
+        escreva("1. Soma\n")
+        escreva("2. Subtracao\n")
+        escreva("3. Multiplicacao\n")
+        escreva("4. Divisao\n")
 
+        escreva("Escolha uma opcao: ")
+        leia(opcao)
 
+        escolha (opcao)
+        {
+            caso 1:
+                resultado = a + b
+                escreva("Resultado: ", resultado)
+                pare
 
-    
-    real nota
-escreva("Nota (0 a 10): ")
-leia(nota)
-se (nota >= 9.0) {
-escreva("Conceito: Excelente \n")
-} senao {
-se (nota >= 7.0) {
-escreva("Conceito: Bom\n ")
-} senao {
-se (nota >= 6.0) {
-escreva("Conceito: Regular\n")
-} senao {
-escreva("Conceito: Insuficiente\n")
-}
-}
-}
+            caso 2:
+                resultado = a - b
+                escreva("Resultado: ", resultado)
+                pare
+
+            caso 3:
+                resultado = a * b
+                escreva("Resultado: ", resultado)
+                pare
+
+            caso 4:
+                se (b == 0)
+                {
+                    escreva("Erro: divisao por zero.")
+                }
+                senao
+                {
+                    resultado = a / b
+                    escreva("Resultado: ", resultado)
+                }
+                pare
+
+            caso contrario:
+                escreva("Opcao invalida.")}
   }
 }
